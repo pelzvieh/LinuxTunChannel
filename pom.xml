@@ -110,4 +110,9 @@
       </extension>
     </extensions>
   </build>
+  <scm>
+    <connection>scm:git:https://github.com/pelzvieh/LinuxTunChannel.git</connection>
+    <url>https://github.com/pelzvieh/LinuxTunChannel</url>
+    <tag>HEAD</tag>
+  </scm>
 </project>
