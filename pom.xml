@@ -2,7 +2,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>de.flyingsnail.tun</groupId>
   <artifactId>LinuxTunChannel</artifactId>
-  <version>1.0.0</version>
+  <version>1.0.1-SNAPSHOT</version>
   <name>LinuxTunChannel</name>
   <properties>
     <!-- encoding -->
@@ -110,6 +110,6 @@
   <scm>
     <connection>scm:git:https://github.com/pelzvieh/LinuxTunChannel.git</connection>
     <url>https://github.com/pelzvieh/LinuxTunChannel</url>
-    <tag>LinuxTunChannel-1.0.0</tag>
+    <tag>HEAD</tag>
   </scm>
 </project>
