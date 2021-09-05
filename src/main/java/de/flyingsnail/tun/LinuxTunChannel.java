@@ -1,21 +1,20 @@
 /**
  * Copyright (c) 2021 Dr. Andreas Feldner (pelzi).
  *
- *     This program is free software; you can redistribute it and/or modify
- *     it under the terms of the GNU General Public License as published by
- *     the Free Software Foundation; either version 2 of the License, or
- *     (at your option) any later version.
+ *  This library is free software; you can redistribute it and/or
+ *  modify it under the terms of the GNU Lesser General Public
+ *  License as published by the Free Software Foundation; either
+ *  version 2.1 of the License, or (at your option) any later version.
  *
- *     This program is distributed in the hope that it will be useful,
- *     but WITHOUT ANY WARRANTY; without even the implied warranty of
- *     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- *     GNU General Public License for more details.
+ *  This library is distributed in the hope that it will be useful,
+ *  but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+ *  Lesser General Public License for more details.
  *
- *     You should have received a copy of the GNU General Public License along
- *     with this program; if not, write to the Free Software Foundation, Inc.,
- *     51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
- *
- * Contact information and current version at http://www.flying-snail.de/IPv6Droid
+ *  You should have received a copy of the GNU Lesser General Public
+ *  License along with this library; if not, write to the Free Software
+ *  Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301
+ *  USA
  */
 package de.flyingsnail.tun;
 
@@ -35,6 +34,13 @@ import com.sun.jna.platform.linux.Fcntl;
 
 
 /**
+ * Open tun device, attach to a network interface (such as tun0) and expose the
+ * network interface to Java programs as Java NIO channels. What you write into
+ * the channel is interpreted as IP packets and sent as such. Traffic routed to
+ * the TUN interface by means of the network configuration of the host will
+ * be read from this channel, each one read operation yielding exactly one
+ * IP packet.
+ * 
  * @author pelzi
  *
  */
